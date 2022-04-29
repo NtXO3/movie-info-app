@@ -24,7 +24,7 @@ function searchResult(val) {
 
 async function movieRender(val) {
     search = val
-    const movies = await fetch(`http://www.omdbapi.com/?s=${val}&apikey=a1d98b4f`)
+    const movies = await fetch(`https://www.omdbapi.com/?s=${val}&apikey=a1d98b4f`)
     const moviesData = await movies.json();
     moviesArray = moviesData.Search
     arrayFilter = moviesData.Search
