@@ -8,6 +8,18 @@ let moviesArray;
 let arrayFilter;
 let search;
 
+const mobileMenu = document.querySelector('.btn__menu')
+
+function toggleMenu() {
+    if(!document.body.classList.contains('menu-open')) {
+        document.body.classList += ' menu-open'
+        mobileMenu.innerHTML = `<i class="fas fa-times"></i>`
+    } else {
+        document.body.classList.remove('menu-open')
+        mobileMenu.innerHTML = `<i class="fas fa-bars"></i>`
+    }
+}
+
 // oninput="movieSearch(this.value)"
 
 /*
