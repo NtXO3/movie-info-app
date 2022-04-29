@@ -3,6 +3,7 @@ const resultEl = document.querySelector('.movies__search--wrapper')
 const searchEl = document.querySelector('.search__icon')
 const inputEl = document.querySelector('.movies__input')
 const selectEl = document.querySelector('.filter')
+const headerEl = document.getElementById('movies__header')
 
 let moviesArray;
 let arrayFilter;
@@ -20,14 +21,17 @@ function toggleMenu() {
     }
 }
 
-// oninput="movieSearch(this.value)"
+const backgroundsArray = ['./Assets/marvel banner.jpeg', './Assets/prison break.jpg', './Assets/spiderman banner.jpg', './Assets/cars.jpg', './Assets/1917.jpg',
+'./Assets/jumanji.jpg', './Assets/piratesotc.jpg', './Assets/jurassic world.jpg', './Assets/the 100.jpg', './Assets/modern family.jpg'
+]
 
-/*
-function movieSearch(val) {
-    const input = val;
-    searchResult(val);
-    movieRender(val);
-} */
+function randomBackground() {
+    const randomIndex = Math.floor(Math.random() * 10)
+    console.log(backgroundsArray[randomIndex])
+    headerEl.style["background-image"] = `url("${backgroundsArray[randomIndex]}")`;
+}
+
+randomBackground()
 
 
 function searchResult(val) {
