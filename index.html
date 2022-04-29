@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Movies Info</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js " crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="movies__header">
+        <section id="movies__landing">
+            <nav>
+                <div class="nav__container">
+                    <img class="nav__logo logo__white" src="./Assets/CineData Logo.png" alt="">
+                    <ul class="nav__links">
+                        <li><a href="./index.html" class="nav__link nav__link--white link__hover-effect link__hover-effect--white">Home</a></li>
+                        <li><a href="#" class="nav__link nav__link--white link__hover-effect link__hover-effect--white no-cursor">Discover Movies</a></li>
+                        <li><a href="#" class="nav__link--primary no-cursor">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="movie__header--content">
+                        <h1 class="movie__header--title">Browse For Movie Data</h1>
+                        <div class="input__wrapper">
+                            <input class="search__input movies__input" type="text" placeholder="Search for movies..." >
+                            <button type="submit" class="search__icon"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main id="movies__main">
+        <section id="movies__section">
+            <div class="container">
+                <div class="row">
+                    <div class="movies__header">
+                        <div class="movies__result--wrapper">
+                            <h2 class="movies__title">Search Results For:</h2>
+                            <div class="movies__search--wrapper">
+                            </div>
+                        </div>
+                        <div class="movies__filter">
+                            <select id="filter" onchange="filterMovies(event)">
+                                <option value="START" selected>Relevance</option>
+                                <option value="OLD_TO_NEW">Year, Old To New</option>
+                                <option value="NEW_TO_OLD">Year, New To Old</option>
+                            </select> 
+                            <!--
+                            <h2 class="year__range">Year Range: <span class="red">1900 to 2022</span></h2>
+                            <div class="slider__wrapper">
+                                <div role="slider" aria-valuemin="1900" aria-valuemax="2022" aria-orientation="horizontal" 
+                                class="slider__el" aria-valuetext="1900-2022" aria-label="slider between 1900 and 2022">
+                                    <div class="slider__runway">
+                                        <div class="slider__bar" style="width: 100%;
+                                        left: 0%;">
+                                        </div>
+                                        <div class="slider__button--wrapper" style="left: 0%;">
+                                            <div class="slider--tooltip slider__button" tabindex="0"></div>
+                                        </div>
+                                        <div class="slider__button--wrapper" style="left: 100%;">
+                                            <div class="slider--tooltip slider__button" tabindex="0"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="movies">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
