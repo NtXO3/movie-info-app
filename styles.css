@@ -545,4 +545,17 @@ nav{
     .movies {
         justify-content: center;
     }
+
+    .movie__header--content {
+        padding: 0 1rem;
+    }
+
+    .movies__header {
+        flex-direction: column;
+    }
+
+    .movies__result--wrapper {
+        text-align: center;
+        margin-bottom: 24px;
+    }
 }
